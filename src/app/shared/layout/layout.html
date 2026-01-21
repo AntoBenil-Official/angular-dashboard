@@ -1,0 +1,21 @@
+<mat-sidenav-container class="container">
+
+    <mat-sidenav mode="side" opened class="sidenav">
+        <h3 class="logo">Dashboard</h3>
+
+        <mat-nav-list>
+            <a mat-list-item routerLink="/">Home</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <span>Angular Dashboard</span>
+        </mat-toolbar>
+
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
